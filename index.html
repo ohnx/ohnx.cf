@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ohnx.cf</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <a class="branding" href="https://ohnx.cf/">ohnx.cf</a>
+            <a href="https://masonx.ca/">Mason</a>
+        </nav>
+        <div class="grid-container">
+            <div class="grid-row">
+                <div class="grid-col-4">
+                    <h1>Hi there!</h1>
+                    <p>Welcome to <b>ohnx.cf</b>, home of ohnx's experiments with the internet.</p>
+                    <p>There's not much here that could pique the interest of anyone other than me right now... expect to see more in the future!</p>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col-4">
+                    <h2>What's here right now?</h2>
+                    <p>
+                        I run one DNS nameserver with IPv6 anycasted from perdix (southeast coast of the US) and icarus (north-central Ukraine).
+                        IPv4 is pointed to mango (southeastern coast of US). When resolving things, it's preferred to use the v6 of this.
+                    </p>
+                    <p>
+                        I run another DNS nameserver with an IPv6 from a Hurricane Electric tunnel, and an IPv4 pointed to kuckuck
+                        (northeastern coast of US). This nameserver is located completely in the US and latencies can run high sometimes, so it's
+                        probably not the best idea to use this server, but it works. Also, if ns1 is down, ns2 is *probably* down as well.
+                    </p>
+                    <p>I only really have one European PoP (icarus in Ukraine), so everything goes through there...</p>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col-4">
+                    <h2>What's there to look forward to in the future?</h2>
+                    <p>I'm hoping to expand my PoP's using Vultr + broadcasting routes. Also, I'd love to get myself an ASN...</p>
+                    <p>
+                        Aside from that, I also hope to run <a href="https://github.com/ohnx/mail">my mail server</a> on mango and a vultr PoP (maybe in EU or in australia)!
+                    </p>
+                    <p>
+                        I would also like to run my own tunneling service... Not too sure how it would work, but something along the lines of a v4 or v6 client connecting to my server
+                        and then me giving the client a /128 to play around with is my idea. Kind of like with <a href="https://ngrok.io/">ngrok</a>, but instead of a single port,
+                        you make your entire IP public! Also kind of like with <a href="https://tunnelbroker.net/">tunnelbroker.net</a>, but with /128's instead of /64's since I'm
+                        not a LIR with infinite /64's (technically I have 16777216 /64's I think but still, I have a bunch that are "reserved for future use").
+                    </p>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col-4">
+                    <h2>Why do this?</h2>
+                    <p>
+                        Because the internet is fun!
+                    </p>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col-4">
+                    <h2>Why do you have so many questions?</h2>
+                    <p>
+                        Because I don't understand CSS and HTML and I can't get my footer to display at the bottom of the page correctly if there is not enough text filling the page!
+                        My solution to this is to write more things and make sure that the page will overflow on as many screens as possible instead of fixing the CSS :)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Made by <a href="https://masonx.ca/">ohnx</a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+/* clean slate */
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: 'Source Code Pro', 'Consolas', monospace;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+/* links */
+a {
+  color: #000;
+  font-weight: bold;
+}
+
+a:hover, a:active, a:focus {
+  color: #000;
+}
+
+/* navbar */
+nav, footer {
+  background-color: #FF8F00;
+  overflow: hidden;
+}
+nav .branding {
+  float: left;
+  color: #000;
+  text-align: center;
+  padding: 28px 32px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a {
+  float: right;
+  color: #000;
+  text-align: center;
+  padding: 28px 32px;
+  text-decoration: none;
+  font-weight: normal;
+}
+nav a:hover, nav a:active, nav a:focus {
+  background-color: #FF6F00;
+  color: #000;
+}
+
+/* footer */
+footer {
+  left: 0;
+  right: 0;
+  padding: 14px 16px;
+}
+
+/* grid layout */
+.grid-container {
+  margin: 0 auto;
+  max-width: calc(100% - 5em);
+  max-width: 650px;
+}
+.grid-row {
+  width: 100%;
+  padding: 10px 0;
+}
+.grid-col-1, .grid-col-2, .grid-col-3, .grid-col-4 {
+  float: left;
+  padding: 0 10px;
+}
+.grid-col-1 {
+  width: 25%;
+}
+.grid-col-2 {
+  width: 50%;
+}
+.grid-col-3 {
+  width: 75%;
+}
+.grid-col-4 {
+  width: 100%;
+}
+.grid-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.right {
+  text-align: right;
+}
+.center {
+    text-align: center;
+}
+@media screen and (max-width: 830px) {
+  .grid-container {
+    margin: 0;
+    max-width: 100%;
+  }
+  .grid-col-1, .grid-col-2, .grid-col-3, .grid-col-4 {
+    float: none;
+    width: 100%;
+  }
+}
