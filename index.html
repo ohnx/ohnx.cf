@@ -23,29 +23,33 @@
                 <div class="grid-col-4">
                     <h2>What's here right now?</h2>
                     <p>
-                        I run one DNS nameserver with IPv6 anycasted from perdix (southeast coast of the US) and icarus (north-central Ukraine).
-                        IPv4 is pointed to mango (southeastern coast of US). When resolving things, it's preferred to use the v6 of this.
+                        Most of the stuff on <b>ohnx.cf</b> is actually only accessible from a VPN.
+                        Actually, if you can see this page right now, you probably aren't connected through the VPN! (and thus won't be able to see anything cool, sorry)
                     </p>
                     <p>
-                        I run another DNS nameserver with an IPv6 from a Hurricane Electric tunnel, and an IPv4 pointed to kuckuck
-                        (northeastern coast of US). This nameserver is located completely in the US and latencies can run high sometimes, so it's
-                        probably not the best idea to use this server, but it works. Also, if ns1 is down, ns2 is *probably* down as well.
+                        I used to run a few things on here, including a DNS server for this domain and rDNS, but I stopped doing that after losing some PoP's. :(
                     </p>
-                    <p>I only really have one European PoP (icarus in Ukraine), so everything goes through there...</p>
+                    <p>
+                        Currently, I run <a href="https://github.com/ohnx/mail">my mail server</a> @ this domain on midas (new midas; northeastern coast of US).
+                        A number of domains all have their mail handled by the same server running on new midas.
+                        This mail server was migrated from another server (mango) that has since gone down.
+                    </p>
                 </div>
             </div>
             <div class="grid-row">
                 <div class="grid-col-4">
                     <h2>What's there to look forward to in the future?</h2>
-                    <p>I'm hoping to expand my PoP's using Vultr + broadcasting routes. Also, I'd love to get myself an ASN...</p>
                     <p>
-                        Aside from that, I also hope to run <a href="https://github.com/ohnx/mail">my mail server</a> on mango and a vultr PoP (maybe in EU or in australia)!
+                        I currently lack a European PoP, so I will probably end up getting one on the free credit I have with Vultr in the near future.
+                        Asia-Pacific is also a possible future PoP region! I'm hoping to anycast a DNS server across some regions so I can have reverse DNS
+                        and stuff running nicely. Of course, I first need to fix up my DNS server that I wrote (I don't even remember where the most recent version of the
+                        code is anymore) to be backed by something that can replicate globally...
                     </p>
                     <p>
                         I would also like to run my own tunneling service... Not too sure how it would work, but something along the lines of a v4 or v6 client connecting to my server
-                        and then me giving the client a /128 to play around with is my idea. Kind of like with <a href="https://ngrok.io/">ngrok</a>, but instead of a single port,
-                        you make your entire IP public! Also kind of like with <a href="https://tunnelbroker.net/">tunnelbroker.net</a>, but with /128's instead of /64's since I'm
-                        not a LIR with infinite /64's (technically I have 16777216 /64's I think but still, I have a bunch that are "reserved for future use").
+                        and then me giving the client a /64 to play around with is my idea. Kind of like with <a href="https://ngrok.io/">ngrok</a>, but instead of a single port,
+                        you make your entire computer public! Also kind of like with <a href="https://tunnelbroker.net/">tunnelbroker.net</a>, but with simpled configuration
+                        (e.g. ngrok). I have a lot of IPv6's thanks to <a href="http://ip6.im/">a very cool service</a>, and I plan on using at least some of this for this purpose :)
                     </p>
                 </div>
             </div>
@@ -53,7 +57,7 @@
                 <div class="grid-col-4">
                     <h2>Why do this?</h2>
                     <p>
-                        Because the internet is fun!
+                        Because the internet is fun! Experimenting is the best way to learn :)
                     </p>
                 </div>
             </div>
